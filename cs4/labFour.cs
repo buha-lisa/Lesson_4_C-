@@ -64,8 +64,9 @@
             string PIP = Console.ReadLine();
             Console.Write("Enter CVC:  ");
             int.TryParse(Console.ReadLine(), out int CVC);
-            Console.Write("Enter date work completion:  ");
-            DateTime.TryParse(Console.ReadLine(), out DateTime Complite);
+            Console.Write("Enter date work completion (DD.MM.YYYY):  ");
+            string input = Console.ReadLine();
+            DateTime.TryParse(input, out DateTime Complite);
             Console.Write("Enter Pine-Code:  ");
             int.TryParse(Console.ReadLine(), out int PineCode);
 
