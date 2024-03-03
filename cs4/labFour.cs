@@ -125,23 +125,23 @@
             {
                 if (num.Length < 16 || num.Length > 20 || num == null)
                 {
-                    throw new Exception();
+                    throw new Exception("Error...");
                 }
                 if (pip == null)
                 {
-                    throw new Exception();
+                    throw new Exception("Error...");
                 }
                 if (cvc < 100 || cvc > 999)
                 {
-                    throw new Exception();
+                    throw new Exception("Error...");
                 }
                 if (complite == null)
                 {
-                    throw new Exception();
+                    throw new Exception("Error...");
                 }
                 if (cvc < 1000 || cvc > 9999)
                 {
-                    throw new Exception();
+                    throw new Exception("Error...");
                 }
             }
             catch (Exception ex) 
@@ -162,7 +162,7 @@
             Console.WriteLine($"Number of card:\t\t{NumberOfCard}");
             Console.WriteLine($"PIP:\t\t\t{PIP}");
             Console.WriteLine($"CVC:\t\t\t{CVC}");
-            Console.WriteLine($"Date work completion:  {Complite}");
+            Console.WriteLine($"Date work completion:   {Complite}");
             Console.WriteLine($"Pine-Code:\t\t{PineCode}");
         }
     }
