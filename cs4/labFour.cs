@@ -66,7 +66,7 @@
             int.TryParse(Console.ReadLine(), out int CVC);
             Console.Write("Enter date work completion (DD.MM.YYYY):  ");
             string input = Console.ReadLine();
-            DateTime.TryParse(input, out DateTime Complite);
+            DateOnly.TryParse(input, out DateOnly Complite);
             Console.Write("Enter Pine-Code:  ");
             int.TryParse(Console.ReadLine(), out int PineCode);
 
@@ -118,13 +118,13 @@
         public string NumberOfCard { get; set; }
         public string PIP { get; set; }
         public int CVC { get; set; }
-        public DateTime Complite { get; set; }
+        public DateOnly Complite { get; set; }
         public int PineCode { get; set; }
-        public CreditCard(string num, string pip, int cvc, DateTime complite, int pine)
+        public CreditCard(string num, string pip, int cvc, DateOnly complite, int pine)
         {
             try
             {
-                if (num.Length < 16 || num.Length > 20 || num == null)
+                if (num == null)
                 {
                     throw new Exception("Error...");
                 }
@@ -136,7 +136,7 @@
                 {
                     throw new Exception("Error...");
                 }
-                if (complite == null)
+                if (complite.Equals(3.3))
                 {
                     throw new Exception("Error...");
                 }
