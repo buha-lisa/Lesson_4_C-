@@ -140,7 +140,7 @@
                 {
                     throw new Exception("Error...");
                 }
-                if (cvc < 1000 || cvc > 9999)
+                if (pine < 1000 || pine > 9999)
                 {
                     throw new Exception("Error...");
                 }
